@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: admin admin, midas comm, LIC=8MZ74-F6VXT-33JM1-C1DJ7-4HUEK-0H8B9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARM.DLL V5.21a
+Dialog DLL:      DARMP.DLL V1.52.0.0
+Target DLL:      UL2ARM.DLL V1.74.9.0
+Dialog DLL:      TARMP.DLL V1.52.0.0
+ 
+<h2>Project:</h2>
+E:\lpc_2138_codes\04_uart\uart_07\uart_07_src\uart_07.uvproj
+Project File Date:  05/09/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling appl.c...
+appl.c(53): warning:  #550-D: variable "int16_num" was set but never used
+         int16_t int16_num = -20;       
+appl.c: 1 warning, 0 errors
+compiling dev_oper.c...
+dev_oper.c(403): warning:  #186-D: pointless comparison of unsigned integer with zero
+        else if(read_dev_id >= 
+EGIN_COMM_DEV_ID && read_dev_id <= END_COMM_DEV_ID )
+dev_oper.c(510): warning:  #186-D: pointless comparison of unsigned integer with zero
+                  if(last_read_char >= 
+EGIN_CTRL_CHARS_ASCII_CODE && last_read_char <= END_CTRL_CHARS_ASCII_CODE)
+dev_oper.c(389): warning:  #177-D: variable "receive_data_service_type" was declared but never referenced
+        char_type_read_enable_flag, dev_type, receive_data_service_type;
+dev_oper.c(772): warning:  #186-D: pointless comparison of unsigned integer with zero
+        !((dev_src_basic_oper_func >= 
+TART_INPUT_DEV_BASIC_OPER_FUNC && dev_src_basic_oper_func <= END_INPUT_DEV_BASIC_OPER_FUNC) || 
+dev_oper.c(781): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if(dev_src_basic_oper_func >= 
+TART_INPUT_DEV_BASIC_OPER_FUNC && dev_src_basic_oper_func <= END_INPUT_DEV_BASIC_OPER_FUNC )
+dev_oper.c(834): warning:  #186-D: pointless comparison of unsigned integer with zero
+                 if((data_dev_basic_oper_func_ptr->dev_id < 
+EGIN_COMM_DEV_ID || data_dev_basic_oper_func_ptr->dev_id > END_COMM_DEV_ID))
+dev_oper.c(1454): warning:  #186-D: pointless comparison of unsigned integer with zero
+         if(!((dev_data_ptr->dev_id >= 
+EGIN_COMM_DEV_ID && dev_data_ptr->dev_id <= END_COMM_DEV_ID) || 
+dev_oper.c(1482): warning:  #186-D: pointless comparison of unsigned integer with zero
+                  if(!(dev_data_ptr->dev_id >= 
+EGIN_COMM_DEV_ID && dev_data_ptr->dev_id <= END_COMM_DEV_ID))
+dev_oper.c: 8 warnings, 0 errors
+compiling gen_std_lib_part_1.c...
+gen_std_lib_part_1.c(175): warning:  #111-D: statement is unreachable
+        return SUCCESS;
+gen_std_lib_part_1.c(1263): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if(char_index >= 0 && char_index <= 9)
+gen_std_lib_part_1.c(1303): warning:  #186-D: pointless comparison of unsigned integer with zero
+                  if(char_index >= 0 && char_index <= 9)
+gen_std_lib_part_1.c(1949): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if(test_char >= 
+EGIN_CTRL_CHARS_ASCII_CODE && test_char <= END_CTRL_CHARS_ASCII_CODE)
+gen_std_lib_part_1.c: 4 warnings, 0 errors
+compiling gen_std_lib_part_2.c...
+gen_std_lib_part_2.c(459): warning:  #177-D: variable "inFraction" was declared but never referenced
+       uint8_t inFraction = STATE_NO, num_digits_int_or_frac_part = 0;   
+gen_std_lib_part_2.c(659): warning:  #550-D: variable "stream_buf_before_proc_pos" was set but never used
+        uint8_t num_chars_read = 0, stream_buf_before_proc_pos;
+gen_std_lib_part_2.c(1679): warning:  #111-D: statement is unreachable
+        return NULL_DATA_PTR;
+gen_std_lib_part_2.c(2529): warning:  #177-D: variable "proc_bit_field" was declared but never referenced
+      uint8_t proc_bit_field = 0, width_spec = conf_width_spec, cur_digit;
+gen_std_lib_part_2.c(2529): warning:  #177-D: variable "cur_digit" was declared but never referenced
+      uint8_t proc_bit_field = 0, width_spec = conf_width_spec, cur_digit;
+gen_std_lib_part_2.c(2530): warning:  #177-D: variable "sign_flag" was declared but never referenced
+      const uint8_t base = ctrl_flag & 0x1F, sign_flag = (ctrl_flag >> SIGN_FLAG_BIT_POS) & 0x01, 
+gen_std_lib_part_2.c(2531): warning:  #177-D: variable "alpha_print_flag" was declared but never referenced
+           pad_format = (ctrl_flag >> PAD_FORMAT_BIT_POS) & 0x03, alpha_print_flag = (ctrl_flag >> ALPHA_BIT_POS ) & 0x03, 
+gen_std_lib_part_2.c: 7 warnings, 0 errors
+compiling io_lib.c...
+compiling isr.c...
+isr.c(311): warning:  #177-D: variable "i" was declared but never referenced
+        uint8_t i = 0;
+isr.c: 1 warning, 0 errors
+compiling lcd.c...
+compiling main.c...
+conf_dev_chs.h(105): warning:  #1-D: last line of file ends without a newline
+                                                                                                                                                
+conf_misc_ids.h(54): warning:  #1296-D: extended constant initialiser used
+                                                                                                                                         {(uint32_t)ISR_UART_0,                                INTP_REQ_UART_CH_0,          INTERRUPT_REQ_NA,               VECTOR_SLOT_NA },  
+conf_misc_ids.h(55): warning:  #1296-D: extended constant initialiser used
+                                                                                                                                         {(uint32_t)ISR_UART_1,                                INTP_REQ_UART_CH_1,          INTERRUPT_REQ_NA,               VECTOR_SLOT_NA },
+conf_misc_ids.h(77): warning:  #1296-D: extended constant initialiser used
+                                                                         {(uint32_t)ISR_PLL,                                INTP_REQ_PLL,            INTERRUPT_REQ_NA,               VECTOR_SLOT_NA }, 
+conf_misc_ids.h(105): warning:  #1296-D: extended constant initialiser used
+                                                                                                                                         {(uint32_t)ISR_Brown_Out_Detect,                                INTP_REQ_BOD,            INTERRUPT_REQ_NA,             VECTOR_SLOT_NA },
+conf_misc_ids.h(136): warning:  #1-D: last line of file ends without a newline
+                                                                                                                                                                                 
+main.c(122): warning:  #111-D: statement is unreachable
+        return SUCCESS;
+main.c: 7 warnings, 0 errors
+compiling uart.c...
+linking...
+Program Size: Code=74668 RO-data=444 RW-data=856 ZI-data=1472  
+FromELF: creating hex file...
+".\Objects\uart_07.axf" - 0 Error(s), 28 Warning(s).
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

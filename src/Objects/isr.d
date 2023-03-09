@@ -1,0 +1,16 @@
+.\objects\isr.o: isr.c
+.\objects\isr.o: main.h
+.\objects\isr.o: C:\Keil_v5\ARM\Inc\Philips\lpc213x.h
+.\objects\isr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\isr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\isr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\isr.o: constants.h
+.\objects\isr.o: sys_status.h
+.\objects\isr.o: conf_io.h
+.\objects\isr.o: lcd.h
+.\objects\isr.o: uart.h
+.\objects\isr.o: conf_appl.h
+.\objects\isr.o: isr.h
+.\objects\isr.o: io_lib.h
+.\objects\isr.o: gen_std_lib.h
+.\objects\isr.o: dev_oper.h
